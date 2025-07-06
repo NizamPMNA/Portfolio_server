@@ -565,8 +565,8 @@ app.get('/getUsers', async (req, res) => {
 
 
 const ip = process.env.HOST
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
-server.listen(port, ip, () => {
+server.listen(port, () => {
   console.log('Server running on port 3001');
 });
